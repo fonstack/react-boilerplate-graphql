@@ -46,10 +46,27 @@ Antes de cualquier otra cosa hay que tener instalado _Prisma_
      El apartado **secret** tiene que ser descomentado cuando se pase a producción.
 
 3. Hacemos el _deploy_ del servidor de prisma para que se generen los archivos necesarios faltantes
+
    - Renombramos el archivo _'variables.env.sample'_ a _'variables.env'_ y luego hacemos el deploy
      ```
        prisma deploy --env-file variables.env
      ```
+
+4. Comandos paa ejecutar la app:
+   - **Backend**
+     - Para abrir un _'Playground'_ para probar querys/mutations de graphQL con la base de datos:
+       ```
+         npm run dev
+       ```
+     - Para hacer un deploy de Prisma:
+       ```
+         npm run deploy
+       ```
+   - **Frontend**
+     - Para abrir la aplicación en el puerto **3000**
+       ```
+         npm start
+       ```
 
 ## **_Instrucciones de Uso_**
 
