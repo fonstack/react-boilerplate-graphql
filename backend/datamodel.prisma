@@ -1,0 +1,11 @@
+# All data types for PRISMA
+
+type Item {
+  id: ID! @unique
+  title: String!
+  description: String!
+  image: String
+  price: Int!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
